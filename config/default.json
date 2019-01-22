@@ -1,0 +1,9 @@
+{
+  "Webhook": {
+    "secret": "yourwebhooksecret"
+  },
+  "Github": {
+    "repo": "/local/full/path/directory/of/your/repo"
+  },
+  "Port": 8888
+}

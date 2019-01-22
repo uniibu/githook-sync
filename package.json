@@ -1,0 +1,18 @@
+{
+  "name": "githook-sync",
+  "version": "1.0.0",
+  "description": "A webhook server that listens for github webhook and automatically pulls update from github",
+  "main": "index.js",
+  "repository": "git@github.com:uniibu/githook-sync.git",
+  "author": "unibtc <unibtc@gmail.com>",
+  "license": "Apache-2.0",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "config": "^3.0.1",
+    "koa": "^2.6.2",
+    "koa-bodyparser": "^4.2.1",
+    "koa-router": "^7.4.0"
+  }
+}
