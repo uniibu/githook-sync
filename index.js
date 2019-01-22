@@ -18,10 +18,11 @@ app.use(bodyParser());
 const toSha1 = str => crypto.createHmac('sha1', secret).update(str).digest('hex');
 
 router.post('/webhook', (ctx, next) => {
+  const headerSig = ctx.request.get('x-hub-signature');
+  const event = ctx.request.get('x-github-event');
   const body = ctx.request.body;
-  if (body.hook && body.hook.events && body.hook.events.includes('push')) {
+  if (body && headerSig && event === 'push') {
     const sigHash = toSha1(JSON.stringify(body));
-    const headerSig = ctx.request.get('x-hub-signature');
     if (`sha1=${sigHash}` === headerSig) {
       ctx.body = { 'success': true }
       exec(`cd ${repo} && git pull`, (error, stdout, stderr) => {
