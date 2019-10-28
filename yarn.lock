@@ -43,10 +43,10 @@ co@^4.6.0:
   resolved "https://registry.npmjs.org/co/-/co-4.6.0.tgz#6ea6bdf3d853ae54ccb8e47bfa0bf3f9031fb184"
   integrity sha1-bqa989hTrlTMuOR7+gvz+QMfsYQ=
 
-config@^3.0.1:
-  version "3.0.1"
-  resolved "https://registry.npmjs.org/config/-/config-3.0.1.tgz#c3118e2eb45fdfd135277339f87e2492559cb147"
-  integrity sha512-TBNrrk2b6AybUohqXw2AydglFBL9b/+1GG93Di6Fm6x1SyVJ5PYgo+mqY2X0KpU9m0PJDSbFaC5H95utSphtLw==
+config@^3.2.4:
+  version "3.2.4"
+  resolved "https://registry.yarnpkg.com/config/-/config-3.2.4.tgz#e60a908582991e800852f9cb60fcf424f3274a6c"
+  integrity sha512-H1XIGfnU1EAkfjSLn9ZvYDRx9lOezDViuzLDgiJ/lMeqjYe3q6iQfpcLt2NInckJgpAeekbNhQkmnnbdEDs9rw==
   dependencies:
     json5 "^1.0.1"
 
