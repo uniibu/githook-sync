@@ -1,0 +1,15 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: config
+    versions:
+    - 3.3.3
+    - 3.3.4
+  - dependency-name: urijs
+    versions:
+    - 1.19.5
